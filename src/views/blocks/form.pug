@@ -1,0 +1,11 @@
+mixin form(title)
+  form.form
+    // Hidden Required Fields
+    input(type='hidden', name='project_name', value='Люкс-Паркинг')
+    input(type='hidden', name='admin_email', value='belozerzevruslan@gmail.com')
+    input(type='hidden', name='form_subject', value='Данные')
+    .form__container
+      .form__group
+        input(type="text" name="Номер телефона" placeholder="+7 (000)  000 - 00 - 00" required).input.form__input.masked-input
+      .form__group
+        button(type='submit').button.form__button=title

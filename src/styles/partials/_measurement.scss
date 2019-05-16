@@ -1,0 +1,35 @@
+.measurement {
+  background-color: #f4f4f4;
+  &__head {
+    margin-bottom: 30px;
+  }
+  &__form {
+    margin-top: 50px;
+  }
+  &__container {
+  }
+  &__list {
+    max-width: 545px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    li {
+      position: relative;
+      padding-left: 30px;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        background-color: $contrast-color;
+      }
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
