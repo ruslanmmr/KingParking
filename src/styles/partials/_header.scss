@@ -42,28 +42,14 @@
 }
 
 @media all and(max-width: 576px) {
+  .header .button {
+    display: none;
+  }
   .header .contact-item {
-    font-size: 0;
-    height: 38px;
-    width: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $contrast-color;
-    border-radius: 5px;
-    transition: 0.3s;
-    .icon {
-      fill: #fff;
-      margin: 0;
-      width: 19px;
-      height: 19px;
-    }
-    &:hover {
-      background-color: #01a51c;
-    }
+    margin-right: 0;
   }
 }
-@media all and(max-width: 420px) {
+@media all and(max-width: 360px) {
   .header__container {
     flex-direction: column;
   }

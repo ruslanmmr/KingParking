@@ -33,19 +33,39 @@ h5 {
   position: relative;
   z-index: 1;
 }
-.slick-track {
-  display: flex;
-}
-.slick-slide {
-  float: none;
-  height: auto;
+.modal-request {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 320px;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.2);
+  font-size: 26px;
+  display: none;
+  span {
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 0;
+    line-height: 1.4;
+  }
+  svg {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+  }
 }
 .container {
   max-width: 1170px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  padding: 0 30px;
+  padding: 0 25px;
 }
 .icon { 
   width: 30px; 
@@ -127,6 +147,9 @@ h5 {
 .contrast {
   color: $contrast-color;
 }
+.nowrap {
+  white-space: nowrap;
+}
 .button {
   border: 0;
   padding: 10px 15px;
@@ -160,6 +183,8 @@ h5 {
   font-size: 18px;
   line-height: 1;
   border: 0;
+  background: transparent;
+  border-radius: 0;
   outline: none;
   padding: 12px 17px;
   border-bottom: 1px solid $contrast-color;
@@ -256,9 +281,20 @@ h5 {
 #map {
   position: absolute;
   width: 100%;
+  max-width: 800px;
   height: 100%;
   right: 0;
   width: 50vw;
+  overflow: hidden;
+  img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media all and(max-width: 768px) {
@@ -277,7 +313,11 @@ h5 {
     font-size: 20px;
   }
 }
-
+@media all and(max-width: 460px) {
+  .form__group {
+    max-width: 100%;
+  }
+}
 
 @import "./partials/header";
 @import "./partials/home";

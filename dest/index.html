@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="styles/libs.min.css">
     <link rel="stylesheet" href="styles/common.min.css">
   </head>
-  <body>
+  <body class="compensate-for-scrollbar">
     <div class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__container">
-            <div class="logo"><a class="logo__link" href="http://luxparking.ru/">
+            <div class="logo"><a class="logo__link" href="http://lux-parking.ru/">
                 <h1 class="logo__title"> <span>Люкс</span>Паркинг</h1><span class="logo__sub-title">роллетные шкафы</span></a></div>
-            <div class="header__nav"><a class="contact-item contact-item_contrast" href="tel:88005553535">
-                <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#smartphone-call"></use></svg>8 (800) 555 35 35</a><a class="button" href="#"><span>
+            <div class="header__nav"><a class="contact-item contact-item_contrast" href="tel:74951339040">
+                <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#smartphone-call"></use></svg>+7 (495) 133-9040</a><a class="button scroll-link" href="#measurement"><span>
                   <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#square-measument"></use></svg>Бесплатный замер</span></a></div>
           </div>
         </div>
@@ -29,14 +29,10 @@
               <h4 class="title title_small">Получите <span>3 подарка и скидку 30%</span> на роллетный шкаф в <span>мае!</span></h4>
             </div>
             <div class="home__form">
-                            <form class="form">
-                              <!-- Hidden Required Fields-->
-                              <input type="hidden" name="project_name" value="Люкс-Паркинг">
-                              <input type="hidden" name="admin_email" value="belozerzevruslan@gmail.com">
-                              <input type="hidden" name="form_subject" value="Данные">
+                            <form class="form callbackwidget-call-form">
                               <div class="form__container">
                                 <div class="form__group">
-                                  <input class="input form__input masked-input" type="text" name="Номер телефона" placeholder="+7 (000)  000 - 00 - 00" required>
+                                  <input class="input form__input masked-input" type="text" name="phone" placeholder="+7 (000)  000 - 00 - 00" required>
                                 </div>
                                 <div class="form__group">
                                   <button class="button form__button" type="submit">Получить 3 подарка</button>
@@ -45,8 +41,29 @@
                             </form>
             </div>
             <div class="home__slider">
-              <div class="home__slide"><img data-lazy="img/banner/banner-image-1.jpg" alt=""></div>
-              <div class="home__slide"><img data-lazy="img/banner/banner-image-2.jpg" alt=""></div>
+              <div class="home__slide">
+                <div class="home__slide-container"><img src="img/banner/banner-image2.jpg" alt="">
+                  <ul class="home__list">
+                    <li class="home__item">Полки подсвечиваются</li>
+                    <li class="home__item">Полки  регулируются по высоте</li>
+                    <li class="home__item">Нагрузостойкость полок 350 кг</li>
+                    <li class="home__item">Прорезиненые ручки</li>
+                    <li class="home__item">Невидимый короб ролетты открывается пультом ДУ</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="home__slide">
+                <div class="home__slide-container"><img src="img/banner/banner-image1.jpg" alt="">
+                  <ul class="home__list">
+                    <li class="home__item">Вентиляционный канал</li>
+                    <li class="home__item">Гидроизоляция дна</li>
+                    <li class="home__item">Персонализация шкафа</li>
+                    <li class="home__item">Технологичный дизайн </li>
+                    <li class="home__item">Высокопрочные материалы</li>
+                    <li class="home__item">Надежный шкаф</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -81,23 +98,18 @@
                   <p class="advantages-block__text">Роллетные шкафы увеличивают стоимость парковочных мест</p>
                 </div>
               </div>
-              <div class="advantages-block col">
-                <div class="advantages-block__container"><svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#assistance"></use></svg>
-                  <p class="advantages-block__text">Радует<br> удобством<br> в паркинге</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
         <section class="section offer">
           <div class="container">
             <div class="section__head">
-              <h4 class="title">ОЧЕНЬ <span>ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ </span>В %МАЕ%<br> ПОЛУЧИТЕ <span>СКИДКУ 30% + ВСЕ 3 ПОДАРКА!</span></h4>
+              <h4 class="title">ОЧЕНЬ <span>ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ </span>В МАЕ<br> ПОЛУЧИТЕ <span>СКИДКУ 30% + ВСЕ 3 ПОДАРКА!</span></h4>
             </div>
             <div class="offer__container row">
               <div class="offer-block col">
                 <div class="offer-block__container">
-                  <div class="offer-block__image cover-box"><img class="lazy" data-src="img/offers/image1.png" alt=""></div><span class="offer-block__title">Мешки для<br> хранения шин</span>
+                  <div class="offer-block__image cover-box"><img class="lazy" data-src="img/offers/image1.png" alt=""></div><span class="offer-block__title">Тканевые мешки<br> для шин</span>
                 </div>
               </div>
               <div class="offer-block col">
@@ -107,19 +119,15 @@
               </div>
               <div class="offer-block col">
                 <div class="offer-block__container">
-                  <div class="offer-block__image cover-box"><img class="lazy" data-src="img/offers/image3.jpg" alt=""></div><span class="offer-block__title">Утроенный срок<br> гарантии – <span>3 ГОДА</span></span>
+                  <div class="offer-block__image cover-box"><img class="lazy" data-src="img/offers/image3.png" alt=""></div><span class="offer-block__title">Персонализация шкафа номером машино места</span>
                 </div>
               </div>
             </div>
             <div class="offer__form">
-                            <form class="form">
-                              <!-- Hidden Required Fields-->
-                              <input type="hidden" name="project_name" value="Люкс-Паркинг">
-                              <input type="hidden" name="admin_email" value="belozerzevruslan@gmail.com">
-                              <input type="hidden" name="form_subject" value="Данные">
+                            <form class="form callbackwidget-call-form">
                               <div class="form__container">
                                 <div class="form__group">
-                                  <input class="input form__input masked-input" type="text" name="Номер телефона" placeholder="+7 (000)  000 - 00 - 00" required>
+                                  <input class="input form__input masked-input" type="text" name="phone" placeholder="+7 (000)  000 - 00 - 00" required>
                                 </div>
                                 <div class="form__group">
                                   <button class="button form__button" type="submit">Получить 3 подарка</button>
@@ -136,27 +144,18 @@
             </div>
             <div class="gallery__container">
               <div class="gallery-block">
-                <div class="gallery-slider">
-                  <div class="gallery-slide"><img data-lazy="img/gallery/image1.png" alt=""></div>
-                  <div class="gallery-slide"><img data-lazy="img/gallery/image3.png" alt=""></div>
-                  <div class="gallery-slide"><img data-lazy="img/gallery/image4.png" alt=""></div>
-                  <div class="gallery-slide"><img data-lazy="img/gallery/image5.png" alt=""></div>
-                  <div class="gallery-slide"><img data-lazy="img/gallery/image6.png" alt=""></div>
-                  <div class="gallery-slide"><img data-lazy="img/gallery/image7.png" alt=""></div>
-                  <div class="gallery-slide"><img data-lazy="img/gallery/image8.png" alt=""></div>
-                  <div class="gallery-slide"><img data-lazy="img/gallery/image9.png" alt=""></div>
-                  <div class="gallery-slide"><img data-lazy="img/gallery/image10.png" alt=""></div>
-                </div>
+                <div class="gallery-slider gallery-area"><a class="gallery-slide" href="img/gallery/image1.png"><img class="lazy" data-src="img/gallery/image1.png" alt=""></a><a class="gallery-slide" href="img/gallery/image2.png"><img class="lazy" data-src="img/gallery/image2.png" alt=""></a><a class="gallery-slide" href="img/gallery/image3.png"><img class="lazy" data-src="img/gallery/image3.png" alt=""></a><a class="gallery-slide" href="img/gallery/image4.png"><img class="lazy" data-src="img/gallery/image4.png" alt=""></a><a class="gallery-slide" href="img/gallery/image5.png"><img class="lazy" data-src="img/gallery/image5.png" alt=""></a><a class="gallery-slide" href="img/gallery/image6.png"><img class="lazy" data-src="img/gallery/image6.png" alt=""></a><a class="gallery-slide" href="img/gallery/image7.png"><img class="lazy" data-src="img/gallery/image7.png" alt=""></a><a class="gallery-slide" href="img/gallery/image8.png"><img class="lazy" data-src="img/gallery/image8.png" alt=""></a><a class="gallery-slide" href="img/gallery/image9.png"><img class="lazy" data-src="img/gallery/image9.png" alt=""></a><a class="gallery-slide" href="img/gallery/image10.png"><img class="lazy" data-src="img/gallery/image10.png" alt=""></a></div>
                 <div class="gallery-nav">
-                  <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image1.png" alt=""></div>
-                  <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image3.png" alt=""></div>
-                  <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image4.png" alt=""></div>
-                  <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image5.png" alt=""></div>
-                  <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image6.png" alt=""></div>
-                  <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image7.png" alt=""></div>
-                  <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image8.png" alt=""></div>
-                  <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image9.png" alt=""></div>
-                  <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image10.png" alt=""></div>
+                  <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/image1.png" alt=""></div>
+                  <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/image2.png" alt=""></div>
+                  <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/image3.png" alt=""></div>
+                  <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/image4.png" alt=""></div>
+                  <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/image5.png" alt=""></div>
+                  <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/image6.png" alt=""></div>
+                  <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/image7.png" alt=""></div>
+                  <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/image8.png" alt=""></div>
+                  <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/image9.png" alt=""></div>
+                  <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/image10.png" alt=""></div>
                 </div>
               </div>
             </div>
@@ -165,32 +164,17 @@
         <section class="section about">
           <div class="container">
             <div class="section__head">
-              <h4 class="title">О компании</h4><span class="sub-title">Мы делаем хранение в паркинге удобным,<br> производя многофункциональные роллетный шкафы «Люкс-Паркинг». </span>
+              <h4 class="title">О компании</h4><span class="sub-title">Мы делаем хранение в паркинге удобным,<br> производя многофункциональные роллетные шкафы «Люкс-Паркинг». </span>
             </div>
             <div class="about__container row">
               <div class="about__section col">
                 <div class="gallery-block">
-                  <div class="gallery-slider">
-                    <div class="gallery-slide"><img data-lazy="img/gallery/image1.png" alt=""></div>
-                    <div class="gallery-slide"><img data-lazy="img/gallery/image3.png" alt=""></div>
-                    <div class="gallery-slide"><img data-lazy="img/gallery/image4.png" alt=""></div>
-                    <div class="gallery-slide"><img data-lazy="img/gallery/image5.png" alt=""></div>
-                    <div class="gallery-slide"><img data-lazy="img/gallery/image6.png" alt=""></div>
-                    <div class="gallery-slide"><img data-lazy="img/gallery/image7.png" alt=""></div>
-                    <div class="gallery-slide"><img data-lazy="img/gallery/image8.png" alt=""></div>
-                    <div class="gallery-slide"><img data-lazy="img/gallery/image9.png" alt=""></div>
-                    <div class="gallery-slide"><img data-lazy="img/gallery/image10.png" alt=""></div>
-                  </div>
+                  <div class="gallery-slider gallery-area"><a class="gallery-slide" href="img/gallery/about1.jpg"><img class="lazy" data-src="img/gallery/about1.jpg" alt=""></a><a class="gallery-slide" href="img/gallery/about2.jpg"><img class="lazy" data-src="img/gallery/about2.jpg" alt=""></a><a class="gallery-slide" href="img/gallery/about3.jpg"><img class="lazy" data-src="img/gallery/about3.jpg" alt=""></a><a class="gallery-slide" href="img/gallery/about4.jpg"><img class="lazy" data-src="img/gallery/about4.jpg" alt=""></a></div>
                   <div class="gallery-nav">
-                    <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image1.png" alt=""></div>
-                    <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image3.png" alt=""></div>
-                    <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image4.png" alt=""></div>
-                    <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image5.png" alt=""></div>
-                    <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image6.png" alt=""></div>
-                    <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image7.png" alt=""></div>
-                    <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image8.png" alt=""></div>
-                    <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image9.png" alt=""></div>
-                    <div class="gallery-slide gallery-slide_nav"><img data-lazy="img/gallery/image10.png" alt=""></div>
+                    <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/about1.jpg" alt=""></div>
+                    <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/about2.jpg" alt=""></div>
+                    <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/about3.jpg" alt=""></div>
+                    <div class="gallery-slide gallery-slide_nav"><img class="lazy" data-src="img/gallery/about4.jpg" alt=""></div>
                   </div>
                 </div>
               </div>
@@ -204,10 +188,10 @@
             </div>
           </div>
         </section>
-        <section class="section measurement">
+        <section class="section measurement" id="measurement">
           <div class="container">
             <div class="section__head measurement__head">
-              <h4 class="title title_small">Запишитесь на <span>БЕСПЛАТНЫЙ ЗАМЕР<br></span>прямо сейчас и получите</h4>
+              <h4 class="title title_small">Запишитесь на <span class="nowrap">БЕСПЛАТНЫЙ ЗАМЕР<br></span>прямо сейчас и получите</h4>
             </div>
             <div class="measurement__container">
               <ul class="measurement__list">
@@ -216,17 +200,13 @@
                 <li>Бесплатный дизайн-проект вашего шкафа</li>
               </ul>
               <div class="measurement__form">
-                                <form class="form">
-                                  <!-- Hidden Required Fields-->
-                                  <input type="hidden" name="project_name" value="Люкс-Паркинг">
-                                  <input type="hidden" name="admin_email" value="belozerzevruslan@gmail.com">
-                                  <input type="hidden" name="form_subject" value="Данные">
+                                <form class="form callbackwidget-call-form">
                                   <div class="form__container">
                                     <div class="form__group">
-                                      <input class="input form__input masked-input" type="text" name="Номер телефона" placeholder="+7 (000)  000 - 00 - 00" required>
+                                      <input class="input form__input masked-input" type="text" name="phone" placeholder="+7 (000)  000 - 00 - 00" required>
                                     </div>
                                     <div class="form__group">
-                                      <button class="button form__button" type="submit">Получить 3 подарка</button>
+                                      <button class="button form__button" type="submit">Вызвать замерщика</button>
                                     </div>
                                   </div>
                                 </form>
@@ -271,19 +251,14 @@
         <section class="section certificates">
           <div class="container">
             <div class="section__head">
-              <h4 class="title title_small">Наши шкафы соответсвуют<br> требованиям безопасности МЧС РФ</h4>
+              <h4 class="title title_small">Мы предоставим разрешительную документацию в УК вашего паркинга и согласуем установку шкафа за Вас.</h4>
             </div>
             <div class="certificates__container">
               <div class="certificates__content row">
-                <div class="certificates-block col">
-                  <div class="certificates-block__container"><img class="lazy" data-src="img/sert3.jpg" alt=""></div>
-                </div>
-                <div class="certificates-block col">
-                  <div class="certificates-block__container"><img class="lazy" data-src="img/sert2.jpg" alt=""></div>
-                </div>
-                <div class="certificates-block col">
-                  <div class="certificates-block__container"><img class="lazy" data-src="img/sert1.jpg" alt=""></div>
-                </div>
+                <div class="certificates-block col"><a class="certificates-block__container" href="img/sert3.jpg" data-fancybox="certificates"><img class="lazy" data-src="img/sert3.jpg" alt=""></a></div>
+                <div class="certificates-block col"><a class="certificates-block__container" href="img/sert2.jpg" data-fancybox="certificates"><img class="lazy" data-src="img/sert2.jpg" alt=""></a></div>
+                <div class="certificates-block col"><a class="certificates-block__container" href="img/sert4.jpg" data-fancybox="certificates"><img class="lazy" data-src="img/sert4.jpg" alt=""></a></div>
+                <div class="certificates-block col"><a class="certificates-block__container" href="img/sert1.jpg" data-fancybox="certificates"><img class="lazy" data-src="img/sert1.jpg" alt=""></a></div>
               </div>
             </div>
           </div>
@@ -293,17 +268,13 @@
             <div class="section__head">
               <h4 class="title title_small">Остались вопросы? Вызовите замерщика <span>БЕСПЛАТНО</span></h4>
             </div>
-                        <form class="form">
-                          <!-- Hidden Required Fields-->
-                          <input type="hidden" name="project_name" value="Люкс-Паркинг">
-                          <input type="hidden" name="admin_email" value="belozerzevruslan@gmail.com">
-                          <input type="hidden" name="form_subject" value="Данные">
+                        <form class="form callbackwidget-call-form">
                           <div class="form__container">
                             <div class="form__group">
-                              <input class="input form__input masked-input" type="text" name="Номер телефона" placeholder="+7 (000)  000 - 00 - 00" required>
+                              <input class="input form__input masked-input" type="text" name="phone" placeholder="+7 (000)  000 - 00 - 00" required>
                             </div>
                             <div class="form__group">
-                              <button class="button form__button" type="submit">Оставить заявку</button>
+                              <button class="button form__button" type="submit">Вызвать замерщика</button>
                             </div>
                           </div>
                         </form>
@@ -314,7 +285,7 @@
             <div class="contacts__container">
               <div class="contacts__section contacts__map">
                 <div class="map">
-                  <div id="map"></div>
+                  <div id="map"><img class="lazy" data-src="img/map.jpg" alt=""></div>
                 </div>
               </div>
               <div class="contacts__section contacts__info">
@@ -322,16 +293,12 @@
                   <h4 class="title contacts__title">НАШИ <span>КОНТАКТЫ</span></h4>
                 </div>
                 <div class="section__item">
-                  <div class="contact-item">ООО “Шкафы на заказ РФ”</div>
+                  <div class="contact-item">ООО «ЛЮКС-ПАРКИНГ»</div>
                 </div>
                 <ul class="contacts__list">
                   <li>
                     <div class="contact-item">
-                      <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#smartphone-call"></use></svg>8 (800) 555 35 35</div>
-                  </li>
-                  <li>
-                    <div class="contact-item">
-                      <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#opened-email-envelope"></use></svg>shafnazakazfr@yandex.ru</div>
+                      <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#smartphone-call"></use></svg>+7 (495) 133 9040</div>
                   </li>
                   <li>
                     <div class="contact-item">
@@ -342,6 +309,9 @@
             </div>
           </div>
         </section>
+        <div class="modal-request">
+          <div class="modal-request__container"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26 26" fill='#02c021' version="1.1" width="26px" height="26px"><g id="surface1"><path style=" " d="M 22.566406 4.730469 L 20.773438 3.511719 C 20.277344 3.175781 19.597656 3.304688 19.265625 3.796875 L 10.476563 16.757813 L 6.4375 12.71875 C 6.015625 12.296875 5.328125 12.296875 4.90625 12.71875 L 3.371094 14.253906 C 2.949219 14.675781 2.949219 15.363281 3.371094 15.789063 L 9.582031 22 C 9.929688 22.347656 10.476563 22.613281 10.96875 22.613281 C 11.460938 22.613281 11.957031 22.304688 12.277344 21.839844 L 22.855469 6.234375 C 23.191406 5.742188 23.0625 5.066406 22.566406 4.730469 Z "/></g></svg><span>Ваша заявка отправлена!</span></div>
+        </div>
       </main>
       <footer class="footer">
         <div class="container">
@@ -353,8 +323,8 @@
       </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/map.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
+    <script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=0d4b4ef51c48c6c35fca8f2deb91932a" charset="UTF-8" async=""></script>
     <script src="js/libs.min.js">                 </script>
     <script src="js/common.min.js"></script>
   </body>

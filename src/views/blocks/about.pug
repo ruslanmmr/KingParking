@@ -2,10 +2,28 @@ section.section.about
   .container
     .section__head
       h4.title О компании
-      span.sub-title Мы делаем хранение в паркинге удобным,<br> производя многофункциональные роллетный шкафы «Люкс-Паркинг». 
+      span.sub-title Мы делаем хранение в паркинге удобным,<br> производя многофункциональные роллетные шкафы «Люкс-Паркинг». 
     .about__container.row
       .about__section.col
-        include gallery-block
+        .gallery-block
+          .gallery-slider.gallery-area
+            a(href="img/gallery/about1.jpg").gallery-slide
+              img(data-src="img/gallery/about1.jpg", alt="").lazy
+            a(href="img/gallery/about2.jpg").gallery-slide
+              img(data-src="img/gallery/about2.jpg", alt="").lazy
+            a(href="img/gallery/about3.jpg").gallery-slide
+              img(data-src="img/gallery/about3.jpg", alt="").lazy
+            a(href="img/gallery/about4.jpg").gallery-slide
+              img(data-src="img/gallery/about4.jpg", alt="").lazy
+          .gallery-nav
+            .gallery-slide.gallery-slide_nav
+              img(data-src="img/gallery/about1.jpg", alt="").lazy
+            .gallery-slide.gallery-slide_nav
+              img(data-src="img/gallery/about2.jpg", alt="").lazy
+            .gallery-slide.gallery-slide_nav
+              img(data-src="img/gallery/about3.jpg", alt="").lazy
+            .gallery-slide.gallery-slide_nav
+              img(data-src="img/gallery/about4.jpg", alt="").lazy
       .about__section.about__text.col
         .scroll-box
           .scroll-box__container
